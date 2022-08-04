@@ -1,0 +1,94 @@
+@import "../abstracts/variables";
+
+body {
+    font-family: $default-font;
+}
+
+h1, h2, h3, h4, h5, p, a {
+    color: $font-color-dark;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 700;
+
+    @media only screen and (max-width: 992px) {
+        font-size: 38px;
+    }
+
+    @media only screen and (max-width: 530px) {
+        font-size: 28px;
+    }
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 700;
+
+    @media only screen and (max-width: 992px) {
+        font-size: 32px;
+    }
+
+    @media only screen and (max-width: 530px) {
+        font-size: 22px;
+    }
+}
+
+h3 {
+    font-size: 28px;
+    font-weight: 400;
+
+    @media only screen and (max-width: 992px) {
+        font-size: 22px;
+    }
+
+    @media only screen and (max-width: 530px) {
+        font-size: 16px;
+    }
+}
+
+h4 {
+    font-size: 22px;
+    font-weight: 700;
+
+    @media only screen and (max-width: 992px) {
+        font-size: 20px;
+    }
+
+    @media only screen and (max-width: 530px) {
+        font-size: 16px;
+    }
+
+    &.light {
+        font-weight: 400;
+    }
+}
+
+p {
+    font-size: 18px;
+    font-weight: 400;
+
+    @media only screen and (max-width: 992px) {
+        font-size: 16px;
+    }
+
+    @media only screen and (max-width: 530px) {
+        font-size: 14px;
+    }
+
+    &.bold {
+        font-weight: 700;
+    }
+
+    &.small {
+        font-size: 15px;
+
+        @media only screen and (max-width: 530px) {
+            font-size: 12px;
+        }
+    }
+}

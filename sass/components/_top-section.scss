@@ -1,0 +1,64 @@
+.top-section {
+    background: url('../img/top-background.jpeg'), linear-gradient( 0deg, $background-color, $background-color );
+    background-repeat: no-repeat;
+    background-size: 125%;
+    background-position: 30%;
+    height: 552px;
+
+    @media only screen and (max-width: 768px) {
+        background-size: 190%;
+    }
+
+    @media only screen and (max-width: 575px) {
+        background-size: 200%;
+        background-position: 50%;
+    }
+
+    @media only screen and (max-width: 490px) {
+        background-size: 240%;
+        background-position: 50%;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        height: 100%;
+    }
+
+    nav {
+        padding: 32px 40px;
+
+        @media only screen and (max-width: 768px) {
+            padding: 32px 40px 32px 0;
+        }
+    }
+
+    &-heading {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+        margin-bottom: 40px;
+        padding-left: 100px;
+
+        @media only screen and (max-width: 768px) {
+            padding-left: 0;
+        }
+
+        h4, h1 {
+            color: $font-color-white;
+        }
+
+        h1 {
+            width: 62%;
+            margin-top: 20px;
+
+            @media only screen and (max-width: 768px) {
+                width: 90%;
+            }
+        }
+    }
+}

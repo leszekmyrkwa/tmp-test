@@ -1,0 +1,116 @@
+.carousel-section {
+    overflow: hidden;
+
+    @media only screen and (max-width: 575px) {
+        display: none;
+    }
+    
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 100px 0;
+
+        @media only screen and (max-width: 575px) {
+            width: 100%;
+            padding: 100px 20px;
+        }
+    }
+
+    &-carousel {
+
+        .swiper {
+            width: 600PX;
+            height: 327px;
+            position: relative;
+            left: -55%;
+            overflow: unset !important;
+
+            @media only screen and (max-width: 1240px) {
+                    width: 520px;
+                    left: -55%;
+            }
+
+            @media only screen and (max-width: 992px) {
+                left: -25%;
+            }
+
+            @media only screen and (max-width: 768px) {
+                left: 10%;
+            }
+
+            &-slide {
+                width: 100% !important;
+            }
+
+            &-button-next {
+                width: 128px;
+                position: absolute;
+                top: -30px;
+                right: -102%;
+                z-index: 1000;
+
+                @media only screen and (max-width: 992px) {
+                    right: -40%;
+                }
+
+                @media only screen and (max-width: 768px) {
+                    right: 0%;
+                }
+                
+            }
+
+            &-button-prev {
+                width: 128px;
+                position: absolute;
+                top: -30px;
+                left: 8%;
+                transform: rotate(180deg);
+                z-index: 1000;
+                display: none;
+
+                @media only screen and (max-width: 1240px) {
+                    left: 35%;
+                }   
+
+                 @media only screen and (max-width: 992px) {
+                    left: 0%;
+                }
+
+                @media only screen and (max-width: 768px) {
+                    left: -20%;
+                }
+            }
+
+            img {
+                width: 582px;
+                height: 327px;
+
+                @media only screen and (max-width: 1240px) {
+                    width: 520px;
+                }
+            }
+        }
+    }
+}
+
+.carousel-section-mobile {
+    display: none;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        padding: 60px 20px;
+
+        img {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+
+    @media only screen and (max-width: 575px) {
+        display: block;
+    }
+}
